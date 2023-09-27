@@ -8,7 +8,21 @@
 </head>
 <body>
     <nav>Nav bar</nav>
-    <a href="/dashboard">dashboard</a>
+    <% if (userId) { %>
+        <a href="/dashboard">Dashboard</a>
+        </p><%= user.email %><p>
+
+        <form action="/logout" method="post">
+            <input type="hidden" name="_method" value="delete">
+            <button>Logout</button>
+        </form>
+
+    <% } else { %>
+        <form action="/login" method="get">
+            <button>Login</button>
+        </form>
+
+    <% } %>
     
     <%-body%>
 
