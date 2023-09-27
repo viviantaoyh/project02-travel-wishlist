@@ -1,0 +1,34 @@
+<header>
+    <link rel="stylesheet" href="/css/show.css">
+</header>
+
+<body>
+    <h2><%= destination.name%></h2>
+
+<p>
+    <% if (destination.imageurl) { %>
+        <img src="<%= destination.imageurl%>" alt="image">
+    <% } %>
+</p>
+
+<p>Target visit date: <%= destination.targetvisitdate%></p>
+<p>Duration: <%= destination.duration%> days</p>
+<p>Travel partner: <%= destination.travelpartners%></p>
+<p>Budget: $<%= destination.budget%></p>
+<p>Travel highlights: <%= destination.note%></p>
+
+<p>
+    <form action="/destinations/<%= destination.id%>" method="post">
+        <input type="hidden" name="_method" value="delete">
+        <button>Delete</button>
+    </form>
+</p>
+
+<p>
+    <form action="/destinations/<%= destination.id%>/edit" method="get">
+        <button>Edit</button>
+    </form>
+
+</p>
+
+</body>

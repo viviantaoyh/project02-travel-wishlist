@@ -1,0 +1,11 @@
+div {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+
+}
+
+.destination-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
