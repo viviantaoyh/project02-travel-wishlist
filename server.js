@@ -15,7 +15,7 @@ const usersRouter = require('./routes/users_routes')
 const pageRouter = require('./routes/pages_routes');
 
 const app = express();
-const port = 8085;
+const port = process.env.PORT || 8085;
 
 app.listen(port, () => {
     console.log(`listening on port ${port}`)
@@ -32,7 +32,7 @@ app.use(express.urlencoded({ extended: true }))  //for req.body{}
 app.use(reqBodyMethodOverride);  // for PUT and DELETE in forms
 
 app.use(session({
-    secret: 'keyboard cat',
+    secret: process.env.SECRET_SESSION || 'keyboard cat',
     resave: false,
     saveUninitialized: true
 }))

@@ -36,6 +36,7 @@ a {
 
 .logo-title {
     display: flex;
+    flex-direction: rows;
     align-items: center;
     gap: 15px; /* Space between logo and title */
 }
