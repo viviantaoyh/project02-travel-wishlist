@@ -28,7 +28,10 @@
             <!-- Conditional Display Area based on user login -->
             <% if (userId) { %>
             <div class="user-info">
-                <p class="user-email"><%= user.email %></p>
+                <a href="/users/account">
+                    <p class="user-email">MyProfile</p>
+                </a>
+                
                 <a href="/dashboard" class="dashboard-link">MyDashboard</a>
 
                 <form action="/logout" method="post" class="logout-form">

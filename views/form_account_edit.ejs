@@ -1,0 +1,30 @@
+<head>
+    <link rel="stylesheet" href="/css/form.css">
+</head>
+<body>
+    <section class="form_container">
+        <h1>Edit Profile</h1>
+    
+        <form action="/users/<%= user.userid%>" method="post">
+            <input type="hidden" name="_method" value="put">
+            
+            <div class="form-group">
+                <label>Name:</label>
+                <input type="text" name="name" value="<%=user.fullname%>">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="text" name="email" value="<%=user.email%>">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="New password">
+            </div>
+            
+            <div class="btn-container">
+                <button>Update</button>
+                <a href="/users/account" class="btn-back">Back to Profile</a>
+            </div>
+
+    </section>
+</body>
