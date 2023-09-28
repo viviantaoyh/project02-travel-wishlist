@@ -1,11 +1,41 @@
-/* div {
-    width: 250px;
-    height: 250px;
-    background-size: cover;
-
+/* container for the dashboard heading and the "Add Trip" button */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* spacing before the destinations section */
 }
 
+.dashboard-header h1 {
+    color: #5E5E5E;
+}
+
+/* container for displaying destinations */
 .destination-list {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-} */
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+}
+
+/* individual destination items */
+.destination-item {
+    position: relative; /* position the link within the div */
+    background-size: cover; 
+    background-position: center; 
+    padding-bottom: 100%; /* ensure div remains square */
+    border-radius: 10px;
+}
+
+/* anchor links within each destination item */
+.destination-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    color: #fff;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+}

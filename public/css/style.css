@@ -1,15 +1,6 @@
-/* main {
-    background-image: url(../images/background1.png);
-}
-
-img {
-    width: 300px;
-} */
-
-
 * {
     box-sizing: border-box;
-    /* font-family: "Abel", sans-serif; */
+    font-family: 'Raleway', sans-serif;
     /* border: 1px solid red; */
     margin: 0;
     padding: 0;
@@ -83,7 +74,7 @@ button {
     border: none;
     border-radius: 10px;
     padding: 8px 16px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.02em;
     color: #ffffff;
     cursor: pointer;
@@ -97,9 +88,7 @@ button:hover {
 main {
     flex: 1; /* occupy the remaining space */
     padding: 20px 5%;
-    /* background-color: #F7F4F1; */
-    background-image: url(../images/background1.png);
-    background-size: auto;
+    background-color: #F7F4F1;
 }
 
 /* footer styles */

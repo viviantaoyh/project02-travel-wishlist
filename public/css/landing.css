@@ -1,0 +1,54 @@
+/* banner section */
+.banner {
+    background-image: url('https://media.cntraveller.com/photos/638e0287e5c3b60d9c25d340/4:3/w_4700,h_3525,c_limit/phone-on-plane-dec22-franckreporter-istock-Getty-Images.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 70vh; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content h1 {
+    color: #ECE5E1;
+    font-size: 4em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-content h2 {
+    color: #ECE5E1;
+    margin-bottom: 1em;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.banner-content .button_login {
+    background-color: #3A81BF;
+    font-size: 1.2em; 
+    color:  #ECE5E1; 
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+.banner-content .button_login:hover {
+    background-color: #286293;
+}
+
+/* images section */
+.images {
+    display: flex;
+    gap: 10px; 
+    margin-top: 2em;
+}
+
+.images img {
+    width: 25%; /* 4 images side by side */
+    height: auto; /* Maintains the image ratio */
+}
+

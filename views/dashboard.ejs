@@ -2,26 +2,24 @@
     <link rel="stylesheet" href="/css/dashboard.css">
 </header>
 <body>
-    <head>
+
+    <!-- Dashboard Heading and Add Trip Button Container -->
+    <header class="dashboard-header">
         <h1>Trips Dashboard</h1>
+
         <form action="/destinations/new" method="get">
             <button>Add Trips</button>
         </form>
-    </head>
-    
+    </header>
 
+    <!-- Destinations Grid Container -->
     <section class="destination-list">
-    
         <% for (let destination of destinations) { %>
-        
-            <div style="background-image: url('<%=destination.imageurl%>')">
-
-                <a href="/destinations/<%=destination.id%>"><%=destination.name%></a>
-
-            </div>
-        
+        <div class="destination-item" style="background-image: url('<%=destination.imageurl%>')">
+            <a href="/destinations/<%=destination.id%>"><%=destination.name%></a>
+        </div>
         <% } %>
-    
-    </section>  
+    </section>
+
 </body>
 

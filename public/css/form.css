@@ -1,5 +1,4 @@
 * {
-    /* border: 1px solid red; */
     box-sizing: border-box;
 }
 
@@ -31,7 +30,7 @@
     margin-bottom: 5px;
     color: #5E5E5E; 
     font-weight: bold;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 /* base styles for input fields */
@@ -57,7 +56,7 @@
 /* styling for paragraphs */
 .form_container p {
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
     color: #5E5E5E;
 }
 
@@ -97,7 +96,7 @@
     border-radius: 5px;
     padding: 15px;
     background: #FFFFFF;
-    margin-bottom: 20px; /* consistent spacing as form-group */
+    margin-bottom: 20px; 
     overflow: hidden; /* ensures no spillover if image is too large */
 }
 
