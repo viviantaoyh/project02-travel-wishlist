@@ -1,21 +1,29 @@
-<header>
+<head>
     <link rel="stylesheet" href="/css/form.css">
-</header>
-
+</head>
 <body>
     <section class="form_container">
         <h1>Login</h1>
+        <h3>Nice to see you!</h3>
 
         <% if (typeof errorMessage !== 'undefined' && errorMessage) { %>
-            <p><%= errorMessage %></p>
+            <p class="error-message"><%= errorMessage %></p>
         <% } %>
 
         <form action="/login" method="post">
-            <label for="">Email</label>
-            <input type="text" name="email" placeholder="Your Email">
-            <label for="">Password</label>
-            <input type="password" name="password" placeholder="Your Password">
-            <button>Login</button>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Your Email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Your Password">
+            </div>
+
+            <div class="btn-container">
+                <button>Login</button>
+                <a href="/" class="btn-back">Back</a>
+            </div>
         </form>
 
         <p>Don't have an account? <a href="/users/new">Sign up here</a></p>

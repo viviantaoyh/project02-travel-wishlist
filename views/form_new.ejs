@@ -1,44 +1,53 @@
-<header>
+<head>
     <link rel="stylesheet" href="/css/form.css">
-</header>
-
+</head>
 <body>
-
     <section class="form_container">
         <h1>New Trip</h1>
         <h3>Plan your vacation now!</h3>
     
         <form action="/destinations" method="post">
-            <label for="">Destination:</label>
-            <input type="text" name="name">
-            <br><br>
-            <label for="">Image url:</label>
-            <input type="text" name="image">
-            <br><br>
-            <label for="">Target visit date:</label>
-            <input type="date" name="targetDate">
-            <br><br>
-            <label for="">Duration:</label>
-            <input type="number" name="duration">
-            <br><br>
-            <label for="">Travel partner:</label>
-            <select name="partner">
-                <option value="Family">Family</option>
-                <option value="Solo">Solo</option>
-                <option value="Partner">Partner</option>
-                <option value="Friends">Friends</option>
-                <option value="Others">Others</option>
-            </select>
-            <br><br>
-            <label for="">Budget:</label>
-            <input type="number" name="budget">
-            <br><br>
-            <label for="">Travel hightlights:</label>
-            <br><br>
-            <textarea name="note" id="" cols="30" rows="8"></textarea>
-            <br><br><br>
-            <button>Add</button>
+            
+            <div class="form-group">
+                <label>Destination:</label>
+                <input type="text" name="name">
+            </div>
+            <div class="form-group">
+                <label>Image url:</label>
+                <input type="text" name="image">
+            </div>
+            <div class="form-group">
+                <label>Target visit date:</label>
+                <input type="date" name="targetDate">
+            </div>
+            <div class="form-group">
+                <label>Duration:</label>
+                <input type="number" name="duration">
+            </div>
+            <div class="form-group">
+                <label>Travel partner:</label>
+                <select name="partner">
+                    <option value="Family">Family</option>
+                    <option value="Solo">Solo</option>
+                    <option value="Partner">Partner</option>
+                    <option value="Friends">Friends</option>
+                    <option value="Others">Others</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Budget:</label>
+                <input type="number" name="budget">
+            </div>
+            <div class="form-group">
+                <label>Travel highlights:</label>
+                <textarea name="note" cols="30" rows="8"></textarea>
+            </div>
+
+            <div class="btn-container">
+                <button>Add</button>
+                <a href="/dashboard" class="btn-back">Back</a>
+            </div>
+            
         </form>
     </section>
-
 </body>

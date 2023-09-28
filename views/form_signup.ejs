@@ -1,19 +1,28 @@
-<header>
+<head>
     <link rel="stylesheet" href="/css/form.css">
-</header>
-
+</head>
 <body>
     <section class="form_container">
         <h1>Sign up</h1>
+        <h3>Enter your details to create your account!</h3>
 
         <form action="/users/new" method="post">
-            <label for="">*Name</label>
-            <input type="text" name="name" placeholder="Name">
-            <label for="">*Email</label>
-            <input type="text" name="email" placeholder="Email">
-            <label for="">*Password</label>
-            <input type="password" name="password" placeholder="Password">
-            <button>Sign up</button>
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label>Email</label>
+                <input type="text" name="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" name="password" placeholder="Password">
+            </div>
+            
+            <div class="btn-container">
+                <button>Sign up</button>
+            </div>
         </form>
 
         <p>Already have an account? <a href="/login">Sign in here</a></p>

@@ -1,0 +1,109 @@
+* {
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+}
+
+/* main container for the form */
+.form_container {
+    max-width: 600px;
+    background: #EFE9E4; 
+    box-shadow: 0px 0px 15px rgba(58, 129, 191, 0.2);
+    border-radius: 12px;
+    border: 5px solid #3A81BF;
+    padding: 25px;
+    margin: 50px auto;
+}
+
+/* stack the form elements vertically */
+.form_container form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* spacing for each label-input pair */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* styles for labels in the form */
+.form_container label {
+    display: block;
+    margin-bottom: 5px;
+    color: #5E5E5E; 
+    font-weight: bold;
+    font-size: 18px;
+}
+
+/* base styles for input fields */
+.form_container input, .form_container textarea, .form_container select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #D1C6BA;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* styles for when input fields are in focus */
+.form_container input:focus, .form_container textarea:focus, .form_container select:focus {
+    border-color: #3A81BF;
+}
+
+/* styling for h1 and h3 headers */
+.form_container h1, .form_container h3 {
+    text-align: center;
+    color: #3A81BF;
+}
+
+/* styling for paragraphs */
+.form_container p {
+    text-align: center;
+    font-size: 14px;
+    color: #5E5E5E;
+}
+
+/* styles for the button container */
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* styles for each button */
+.form_container button, .form_container .btn-back {
+    align-self: center;
+    background: #3A81BF;
+    border: none;
+    padding: 12px 24px;
+    color: #EFE9E4;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1; /* to ensure the buttons take equal width */
+    text-align: center;
+    text-decoration: none; /* remove underline from link */
+    display: inline-block; /* to allow for padding */
+}
+
+/* styles for each button when hover */
+.form_container button:hover, .form_container .btn-back:hover {
+    background-color: #286293; 
+}
+
+/* styles for the image container */
+.form_container .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #D1C6BA; 
+    border-radius: 5px;
+    padding: 15px;
+    background: #FFFFFF;
+    margin-bottom: 20px; /* consistent spacing as form-group */
+    overflow: hidden; /* ensures no spillover if image is too large */
+}
+
+/* styles for the image itself */
+.form_container .image-container img {
+    max-width: 100%; /* ensures image stays within its container */
+    height: auto;
+    border-radius: 4px; 
+}
