@@ -24,6 +24,8 @@ CREATE TABLE Destinations (
     note TEXT
 );
 
+-- Create user via sign up page
+
 -- Insert demo data into Destinations
 INSERT INTO Destinations (userid, name, imageurl, targetVisitDate, duration, travelPartners, budget, note)
 VALUES (1, 'Paris', 'https://www.thetrainline.com/cms/media/1360/france-eiffel-tower-paris.jpg?mode=crop&width=1080&height=1080&quality=70', '2023-12-15', 5, 'Family', 5000, 'Plan to visit Eiffel Tower and Louvre Museum.');
