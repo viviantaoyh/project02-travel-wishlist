@@ -40,11 +40,12 @@ router.post('/users/new', (req, res) => {
 });
 })
 
-
+// user profile
 router.get('/users/account', ensureLoggedIn, (req, res) => {
     res.render('profile')
 })
 
+// update user details and password
 router.get('/users/:id/edit', ensureLoggedIn, (req,res) => {
     res.render('form_account_edit')
 } )

@@ -6,6 +6,7 @@
     <section class="form_container">
         <h1><%= destination.name%></h1>
 
+        <br>
         <% if (destination.imageurl) { %>
             <div class="form-group image-container">
                 <img src="<%= destination.imageurl%>" alt="image">
@@ -37,7 +38,7 @@
             <p><%= destination.note%></p>
         </div>
 
-
+        <br>
         <div class="btn-container">
             <form action="/destinations/<%= destination.id%>" method="post">
                 <input type="hidden" name="_method" value="delete">
