@@ -138,6 +138,7 @@ The creation of the two entities, Users and Destinations, stemmed from the core 
 Creating a wireframe prior to the development of my web app was an invaluable step in my design process. This preliminary sketch allowed me to visualize the layout and structure of each page, ensuring that I had a clear roadmap before diving into the actual development. By doing so, I could identify potential design challenges early on and address them proactively. Furthermore, the wireframe guided my decisions regarding consistent styling, especially for forms. I noticed that many pages shared similar form elements, so adopting a consistent CSS styling for these forms not only provided a cohesive user experience but also streamlined my development process. 
 
 ![](/public/images/wireframe1.jpg)
+---
 
 ![](/public/images/wireframe2.jpg)
 
