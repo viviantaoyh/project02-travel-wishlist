@@ -25,6 +25,10 @@ a {
 
 /* Header styles */
 .top-bar {
+    position: sticky;
+    position: -webkit-sticky; /* For Safari */
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000; /* This ensures the header stays on top of other content */
     display: flex;
     justify-content: space-between;
     align-items: center;

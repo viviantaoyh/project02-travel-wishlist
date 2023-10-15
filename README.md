@@ -1,4 +1,4 @@
-# 🌟 WishJourney: : Your Travel Dreams Visualized 🌟
+# 🌟 WishJourney: Your Travel Dreams Visualized 🌟
 Hey there! Welcome to my second project 'WishJourney'~
 
 💎 [Click here](https://project02-wishjourney.onrender.com) to see my live project!
